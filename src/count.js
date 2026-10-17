@@ -1,0 +1,1 @@
+export function countText(text){const normalized=text.normalize('NFC');return {withSpaces:Array.from(normalized.replace(/[\r\n\u2028\u2029]/g,'')).length,withoutSpaces:Array.from(normalized.replace(/\s/gu,'')).length};}
